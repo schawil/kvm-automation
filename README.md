@@ -21,7 +21,12 @@ Commencez par télécharger l'image ISO de la distribution RHEL ou CentOS que vo
 - [Télécharger CentOS](https://www.centos.org/download/)
 - [Télécharger Fedora](https://getfedora.org/)
 
+Demarrez le server pour telecharger le fichier kickstart
+`sudo python3 -m http.server 8000 --directory /chemin/vers/ks/`
+et lancer le script: `virt-install.sh`
+
 Une fois l'ISO téléchargée, déplacez-la dans le répertoire `/var/lib/libvirt/images/` :
 
 ```bash
 sudo mv /chemin/vers/l'image.iso /var/lib/libvirt/images/
+
